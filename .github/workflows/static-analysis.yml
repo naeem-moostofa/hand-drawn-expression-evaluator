@@ -28,9 +28,6 @@ jobs:
           pip install flake8 black mypy numpy opencv-python pillow scipy pandas
           pip install types-pillow
 
-
-
-
       - name: Run flake8 (Linting)
         run: flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
 
@@ -38,6 +35,10 @@ jobs:
         run: black .
 
       - name: Run mypy (Type Checking)
-        run: mypy --show-traceback --ignore-missing-imports .
-
-
+        run: |
+          # Check if mypy.ini is present in the repo, and if so, run mypy with it
+          if [ -f mypy.ini ]; then
+            mypy --show-traceback --ignore-missing-imports --config-file mypy.ini .
+          else
+            mypy --show-traceback --ignore-missing-imports .
+          fi
