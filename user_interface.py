@@ -99,7 +99,7 @@ img = np.asarray(image)
 
 digit_1 = img.T[:270]
 digit_1 = digit_1.T
-digit_1 = gaussian_filter(digit_1, sigma = 3).astype(np.uint8)
+digit_1 = gaussian_filter(digit_1, sigma=3).astype(np.uint8)  # type: ignore
 digit_1 = cv2.resize(digit_1, (28,28))
 digit_1 = digit_1.reshape(1, 784)
 
@@ -110,7 +110,7 @@ symbol = symbol.reshape(1, 20925)
 
 digit_2 = img.T[580:]
 digit_2 = digit_2.T
-digit_2 = gaussian_filter(digit_2, sigma = 3).astype(np.uint8)
+digit_2 = gaussian_filter(digit_2, sigma = 3).astype(np.uint8) # type: ignore
 digit_2 = cv2.resize(digit_2, (28,28))
 digit_2 = digit_2.reshape(1, 784)
 
