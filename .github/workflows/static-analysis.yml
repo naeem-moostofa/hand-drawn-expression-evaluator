@@ -38,5 +38,5 @@ jobs:
         run: black .
 
       - name: Run mypy (Type Checking)
-        run: mypy --ignore-missing-imports .
+        run: mypy --debug --ignore-missing-imports .
 
