@@ -38,6 +38,6 @@ jobs:
         run: black .
 
       - name: Run mypy (Type Checking)
-        run: mypy --show-traceback --ignore-missing-imports .
+        run: mypy --clear-cache --show-traceback --ignore-missing-imports .
 
 
