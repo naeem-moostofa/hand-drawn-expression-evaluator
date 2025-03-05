@@ -19,10 +19,12 @@ jobs:
         with:
           python-version: "3.10"
 
+      - name: Install pandas type stubs
+        run: pip install pandas-stubs
+        
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
-          run: pip install pandas-stubs
           pip install flake8 black mypy numpy opencv-python pillow scipy pandas
           pip install types-pillow types-pandas
 
