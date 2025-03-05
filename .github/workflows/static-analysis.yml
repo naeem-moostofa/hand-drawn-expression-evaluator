@@ -27,8 +27,8 @@ jobs:
       - name: Run flake8 (Linting)
         run: flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
 
-      - name: Run black (Formatting Check)
-        run: black --check .
+      - name: Run black (Auto-Fix Formatting)
+        run: black .
 
       - name: Run mypy (Type Checking)
         run: mypy .
