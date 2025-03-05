@@ -40,5 +40,5 @@ jobs:
           if [ -f mypy.ini ]; then
             mypy --show-traceback --ignore-missing-imports --config-file mypy.ini .
           else
-            mypy --show-traceback --ignore-missing-imports --no-strict-optional .
+            mypy --show-traceback --ignore-missing-imports --disable-error-code=assignment .
           fi
