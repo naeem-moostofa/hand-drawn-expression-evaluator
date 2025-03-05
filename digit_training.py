@@ -10,9 +10,9 @@ start_time = datetime.now()
 
 
 #Import data from file that is already inside the workspace and correct path
-data = pd.read_csv('mnist_test.csv')
+raw_data = pd.read_csv('mnist_test.csv')
 #Change data into an array so that we can perform matrix operations
-data = np.array(data)
+data = np.array(raw_data)
 
 #(n1, n2, n3, ...) = data.shape returns the size of each dimension of an nd array "data"
 (samplesize, picturesize) = data.shape
