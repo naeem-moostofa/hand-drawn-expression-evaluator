@@ -1,5 +1,5 @@
 # hand-drawn-expression-evaluator
-![Python](https://img.shields.io/badge/Python-3.9-blue?logo=python)
+![Python](https://img.shields.io/badge/Python-3.1.2-blue?logo=python)
 
 Handwritten Expression Evaluator
 
