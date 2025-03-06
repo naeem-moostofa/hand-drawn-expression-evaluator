@@ -1,5 +1,6 @@
 # hand-drawn-expression-evaluator
 ![Python](https://img.shields.io/badge/Python-3.1.2-blue?logo=python)
+![Static Analysis](https://github.com/naeem-moostofa/neural-network/actions/workflows/static-analysis.yml/badge.svg)
 
 Handwritten Expression Evaluator
 
